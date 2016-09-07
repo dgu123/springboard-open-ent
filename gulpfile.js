@@ -71,7 +71,7 @@ gulp.task('copy-local', function () {
 });
 
 gulp.task('override-theme', ['fill-theme'], function () {
-    var overrides = ['img', 'js', 'fonts', 'template', 'default'];
+    var overrides = ['img', 'js', 'fonts', 'template', 'default', 'css'];
     var tasks = [];
     overrides.forEach((override) => {
         var t = gulp.src(['./assets/themes/' + childTheme + '/override-' + override + '/**/*'])
